@@ -1,0 +1,19 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "simple weather app for odin-project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hostman1/weatherApp.git"
+  },
+  "author": "Jorge Capellan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hostman1/weatherApp/issues"
+  },
+  "homepage": "https://github.com/hostman1/weatherApp#readme"
+}
