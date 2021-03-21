@@ -51,21 +51,10 @@ function calculateTemp(temperature){
         return ((temperature - 273.15) * 9/5 + 32);
     }
 }
-async function displayReading(main, temperature, humidity){
+function displayReading(main, temperature, humidity){
     document.getElementById("weather-text").textContent = `Weather: ${main}`;
     let tempFinal = calculateTemp(temperature);
     document.getElementById("temperature-text").textContent = `Temperature ${Math.round(tempFinal * 100) / 100}°`;
     document.getElementById("humidity-text").textContent = `Humidity: ${humidity}%`;
 
-}
-
-    var city = document.getElementById("city").value;
-    console.log(city);
-    const response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=cordoba,argentina&appid=bc4132385698018c1be6ea9bec28afe6",{mode: 'cors'});
-    console.log(response);
-    const information = await response.json();
-    console.log(information);
-    document.getElementById("change").textContent = information.id;
-    
-    
 }
