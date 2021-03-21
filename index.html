@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <body>
     <header>
-        <h3>Welcome to another useless weather App!</h3>
+        <h3>Welcome to another useless weather App!</h3><div id="buttons"><button class="btnTemp" onclick="changeTemp()">Change reading</button><p id="tempSelector">Currently on C°</p></div>
     </header>
     <main>
         <form onsubmit="searchWeather();return false">
             <input id="city" type="text" placeholder="Tokyo, Japan" required><input type="submit" value="Search">
+            <p id="error"></p>
             
         </form>
         <div class="weather">
-            <p id="change">hols</p>
-        </div>
+            <div id="img-content"><img id="climafoto" src="" alt="clima"></div>
+            <div id="text-content">
+                <p id="weather-text">Weather: </p>
+                <p id="temperature-text">Temperature: </p>
+                <p id="humidity-text">Humidity: </p>
+            </div>
     </main>
     <footer>
         <p>Made and designed by the one and only Jorge Capellan:&nbsp;</p><a href="https://www.instagram.com/jorge_cape00/?hl=es-la" class="fa fa-instagram" target="_blank"></a>&nbsp;

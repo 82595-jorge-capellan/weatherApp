@@ -12,15 +12,16 @@ a:visited {
 body{
     height: 100%;
     width: 100%;
+    background-color: black;
 }
 header{
     margin-left: 0;
     width: 80vw;
     height: 10vh;
-    background-color: aqua;
+    background-color: rgba(256,256,256,0.5);;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     border-radius: 2px 15px 15px 2px;
 
 }
@@ -28,7 +29,7 @@ main{
     margin: 5vh 0 5vh auto;
     width: 80vw;
     height: 70vh;
-    background-color: beige;
+    background-color: rgba(256,256,256,0.5);
     border-radius: 15px 2px 2px 15px;
     display: flex;
     align-content: center;
@@ -42,15 +43,47 @@ form{
     margin: auto;
     height: 50%;
     width: 80%;
-    background-color: hotpink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    border: 2px dashed;
+    border-radius: 14px;
+}
+#text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+#img-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
 }
 footer{
     margin-left: 0;
     width: 80vw;
     height: 10vh;
-    background-color: aqua;
+    background-color: rgba(256,256,256,0.5);;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 2px 15px 15px 2px;
+}
+#climafoto{
+    /* temporal , change to <img>*/
+    height: 100px;
+    width: 100px;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+    display: block;
+    /* temporal */
+}
+#error{
+    text-align: center;
 }
