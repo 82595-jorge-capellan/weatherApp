@@ -14,7 +14,7 @@ function changeTemp(){
 async function searchWeather(){
     try{
         var city = document.getElementById("city").value;
-        var response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=bc4132385698018c1be6ea9bec28afe6`,{mode: 'cors'});
+        var response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=bc4132385698018c1be6ea9bec28afe6`,{mode: 'cors'});
         var information = await response.json();
         var weatherObject = {
             temperatureK: information.main.temp,
