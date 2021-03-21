@@ -51,7 +51,7 @@ function calculateTemp(temperature){
         return ((temperature - 273.15) * 9/5 + 32);
     }
 }
-function displayReading(main, temperature, humidity){
+async function displayReading(main, temperature, humidity){
     document.getElementById("weather-text").textContent = `Weather: ${main}`;
     let tempFinal = calculateTemp(temperature);
     document.getElementById("temperature-text").textContent = `Temperature ${Math.round(tempFinal * 100) / 100}°`;
