@@ -42,6 +42,7 @@ async function searchWeather(){
         document.getElementById("error").innerHTML = "if you got an error try writing the city in<br>its native name and with no errors.";
     }
     
+<<<<<<< HEAD
     
 }
 function calculateTemp(temperature){
@@ -59,3 +60,15 @@ function displayReading(main, temperature, humidity){
 
 }
 
+=======
+    var city = document.getElementById("city").value;
+    console.log(city);
+    const response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=cordoba,argentina&appid=bc4132385698018c1be6ea9bec28afe6",{mode: 'cors'});
+    console.log(response);
+    const information = await response.json();
+    console.log(information);
+    document.getElementById("change").textContent = information.id;
+    
+    
+}
+>>>>>>> a5955fbb20168ff2f96eb838740ecc57e290d5cc
